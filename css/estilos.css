@@ -1,0 +1,390 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+nav{
+    font-size: 15px;
+    height: 80px;
+    background-color: rgb(212,61,61);
+    color:white
+}
+nav .logo{
+    margin-top: 25px;
+    margin-left: 10px;
+    float:left;
+}
+
+nav .logo a{
+  list-style: none;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+nav ul li{
+    margin-top: 30px;
+    height: 50px;
+    list-style: none;
+    float: right;
+    margin-right: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+nav a:hover{
+    color:darkgrey
+}
+
+body{
+    background-color: rgb(236, 236, 236);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ImagenPpal01 img{
+  width: 100%;
+}
+
+/*Principios index*/
+.Principios {  
+    display: grid;
+    text-align: center;
+    margin-top: 15px;
+    grid-template-columns: 0.2fr .5fr .5fr .5fr 0.2fr;
+    grid-template-rows: .6fr 70% 10%;
+    height: 200px;
+    gap: 20px 50px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Titulo Titulo Titulo Titulo Titulo"
+      ". area1 area2 area3 ."
+      ". . . . .";
+  }
+  .PpiosTitulo { 
+      grid-area: Titulo;
+      font-size: 30px;
+    }
+
+  .area1 { 
+      grid-area: area1;
+      height:fit-content;
+      background-color:rgb(212, 61, 61);
+      color: white;
+      border: 3px solid gray
+}
+  
+  .area2 { 
+      grid-area: area2; 
+      height: fit-content;
+      background-color:rgb(212, 61, 61);
+      color: white;
+      border: 3px solid gray
+    }
+  
+  .area3 { 
+      grid-area: area3; 
+      height: fit-content;
+      background-color:rgb(212, 61, 61);
+      color: white;
+      border: 3px solid gray
+    }
+  
+/*galeria obras*/
+
+.GaleriaObras {  
+    display: grid;
+    text-align:center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: rgb(212, 61, 61) ;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 0.3fr;
+    grid-template-rows: 0.6fr 1fr 1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "marcoSup marcoSup marcoSup marcoSup marcoSup marcoSup marcoSup marcoSup"
+      "marcoIzq galeriaObras galeriaObras galeriaObras galeriaObras galeriaObras galeriaObras marcoDer"
+      "marcoIzq galeriaObras galeriaObras galeriaObras galeriaObras galeriaObras galeriaObras marcoDer"
+      "marcoIzq galeriaObras galeriaObras galeriaObras galeriaObras galeriaObras galeriaObras marcoDer"
+      "marcoInf marcoInf marcoInf marcoInf marcoInf marcoInf marcoInf marcoInf";
+  }
+  
+  .marcoSup { 
+      grid-area: marcoSup; 
+      font-size: 30px;
+      color: white;
+    }
+  
+  .marcoIzq { grid-area: marcoIzq; }
+  
+  .marcoInf { grid-area: marcoInf; }
+  
+  .marcoDer { grid-area: marcoDer; }
+  
+  .galeriaObras {  
+        display: grid;
+        background-color: rgb(236, 236, 236);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 150px 150px 150px 150px;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 3px 3px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "obra1 obra5 obra6 obra6"
+          "obra1 obra2 obra2 obra8"
+          "obra3 obra2 obra2 obra8"
+          "obra4 obra4 obra7 obra8";
+        grid-area: galeriaObras;
+  }
+  
+  .GaleriaObras:hover{
+    transform: scale(1,1);
+    transition: all 0,7s;
+  }
+  .obra1 { 
+    grid-area: obra1; 
+    background-color: red;
+    background-image: url(../img/106.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .obra2 { 
+      grid-area: obra2; 
+      background-position: center;
+      background-size: cover;
+      background-image: url(../img/PK08CAEBACL.jpg);
+      text-align: center;
+      text-decoration: none;
+      list-style: none;
+    }
+    .obra2 a {
+        text-decoration: none;
+        list-style: none;
+        color:black
+    }
+  
+  .obra3 { 
+      grid-area: obra3; 
+      background-position: center;
+      background-size: cover;
+      background-image: url(../img/Arquitectura.jpg);
+      text-align: center;
+    }
+  
+  .obra4 { 
+      grid-area: obra4; 
+      background-position: center;
+      background-size: cover;
+      background-image: url(../img/Tecnica-0001.jpeg);
+      text-align: center;
+    }
+  
+  .obra5 { 
+      grid-area: obra5; 
+      background-position: center;
+      background-size: cover;
+      background-image: url(../img/Arquitectura.jpg);
+      text-align: center;
+    }
+  
+  .obra6 { 
+      grid-area: obra6; 
+      background-position: center;
+      background-size: cover;
+      background-image: url(../img/Jardin913-0001.jpeg);
+      text-align: center;
+    }
+  
+  .obra7 { 
+      grid-area: obra7; 
+      background-position: center;
+      background-size: cover;
+      background-image: url(../img/Arquitectura.jpg);
+      text-align: center;
+    }
+  
+  .obra8 { 
+      grid-area: obra8;
+        background-position: center;
+        background-size: cover;
+      background-image: url(../img/Arquitectura.jpg);
+      text-align: center;
+    }
+  
+
+
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+
+      .Principios {  
+
+        display: grid;
+        text-align: center;
+        margin-top: 15px;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        height: 600px;
+        gap: 50px;
+        grid-auto-flow: row;
+
+      }
+      .PpiosTitulo { 
+          grid-column: 1/4;
+          grid-row: 1/2;
+        }
+    
+      .area1 { 
+        grid-column: 2/3;
+        grid-row: 2/3; 
+    }
+      
+      .area2 { 
+        grid-column: 2/3;
+        grid-row: 3/4;
+        }
+      
+      .area3 { 
+        grid-column: 2/3;
+        grid-row: 4/5;  
+        }
+
+
+      .GaleriaObras {  
+        display: grid;
+        text-align:center;
+        margin-top: 10px;
+        background-color: rgb(212, 61, 61) ;
+
+        gap: 0px 0px;
+        grid-auto-flow: row;
+      }
+      .galeriaObras {  
+        display: grid;
+        background-color: rgb(236, 236, 236);
+        grid-template-columns: 100% ;
+        grid-template-rows: auto;
+      }
+      .obra1 { 
+        grid-column: 1/2;
+        grid-row: 1/2;
+        }
+      
+      .obra2 { 
+        grid-column: 1/2;
+        grid-row: 2/3;
+        }
+
+      
+      .obra3 { 
+        grid-column: 1/2;
+        grid-row: 3/4;
+        }
+      
+      .obra4 { 
+        grid-column: 1/2;
+        grid-row: 4/5;
+        }
+      
+      .obra5 { 
+        grid-column: 1/2;
+        grid-row: 5/6;
+        }
+      
+      .obra6 { 
+        grid-column: 1/2;
+        grid-row: 6/7;
+        }
+      
+      .obra7 { 
+        grid-column: 1/2;
+        grid-row: 7/8;
+        }
+      
+      .obra8 { 
+        grid-column: 1/2;
+        grid-row: 8/9;
+        }
+
+    
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+      
+      
+      .GaleriaObras {  
+        display: grid;
+        text-align:center;
+        margin-top: 10px;
+        background-color: rgb(212, 61, 61) ;
+
+        gap: 0px 0px;
+        grid-auto-flow: row;
+      }
+      .galeriaObras {  
+        display: grid;
+        background-color: rgb(236, 236, 236);
+        grid-template-columns: 50%  50% ;
+        grid-template-rows: auto;
+      }
+      .obra1 { 
+        grid-column: 1/2;
+        grid-row: 1/2;
+        }
+      
+      .obra2 { 
+        grid-column: 2/3;
+        grid-row: 1/2;
+        }
+
+      
+      .obra3 { 
+        grid-column: 1/2;
+        grid-row: 2/3;
+        }
+      
+      .obra4 { 
+        grid-column: 2/3;
+        grid-row: 2/3;
+        }
+      
+      .obra5 { 
+        grid-column: 1/2;
+        grid-row: 3/4;
+        }
+      
+      .obra6 { 
+        grid-column: 2/3;
+        grid-row: 3/4;
+        }
+      
+      .obra7 { 
+        grid-column: 1/2;
+        grid-row: 4/5;
+        }
+      
+      .obra8 { 
+        grid-column: 2/3;
+        grid-row: 4/5;
+        }
+    
+    }
+    
+    @media (min-width: 992px) {
+    
+    }
+    
+    
+    @media (min-width: 1200px) {
+    
+    }
+    
+    
+    @media (min-width: 1400px) {  
+  
+    }
