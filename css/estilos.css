@@ -11,10 +11,12 @@ nav{
     background-color: rgb(212,61,61);
     color:white
 }
-nav .logo{
-    margin-top: 25px;
+nav img{
+    margin-top: 15px;
     margin-left: 10px;
     float:left;
+    height: 50px;
+
 }
 
 nav .logo a{
@@ -90,7 +92,11 @@ body{
       border: 3px solid gray
     }
   
-/*galeria obras*/
+    .foto img{
+      max-width: 50%;
+    }
+
+    /*galeria obras*/
 
 .GaleriaObras {  
     display: grid;
