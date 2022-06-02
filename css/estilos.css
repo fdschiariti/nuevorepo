@@ -8,13 +8,16 @@
 nav{
     font-size: 15px;
     height: 80px;
-    background-color: rgb(212,61,61);
+    background-color: rgb(136, 41, 41);
     color:white
 }
-nav .logo{
-    margin-top: 25px;
+nav img{
+    margin-top: 15px;
     margin-left: 10px;
     float:left;
+    height: 50px;
+    flood-color: aliceblue;
+
 }
 
 nav .logo a{
@@ -46,14 +49,13 @@ body{
   width: 100%;
 }
 
-/*Principios index*/
+/*Principios index inicio*/
 .Principios {  
     display: grid;
     text-align: center;
     margin-top: 15px;
     grid-template-columns: 0.2fr .5fr .5fr .5fr 0.2fr;
-    grid-template-rows: .6fr 70% 10%;
-    height: 200px;
+    grid-template-rows: 100px 300px 100px;
     gap: 20px 50px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -69,7 +71,7 @@ body{
   .area1 { 
       grid-area: area1;
       height:fit-content;
-      background-color:rgb(212, 61, 61);
+      background-color:rgb(136, 41, 41);
       color: white;
       border: 3px solid gray
 }
@@ -77,7 +79,7 @@ body{
   .area2 { 
       grid-area: area2; 
       height: fit-content;
-      background-color:rgb(212, 61, 61);
+      background-color:rgb(136, 41, 41);
       color: white;
       border: 3px solid gray
     }
@@ -85,19 +87,31 @@ body{
   .area3 { 
       grid-area: area3; 
       height: fit-content;
-      background-color:rgb(212, 61, 61);
+      background-color:rgb(136, 41, 41);
       color: white;
       border: 3px solid gray
     }
+/*Principios index fin*/
+
+/*footer inicio*/
+footer {
+  height: 300px;
+  background-color:rgb(136, 41, 41) ;
+}
+/*footer fin*/
   
-/*galeria obras*/
+    .foto img{
+      max-width: 50%;
+    }
+
+    /*galeria obras*/
 
 .GaleriaObras {  
     display: grid;
     text-align:center;
     align-items: center;
     margin-top: 30px;
-    background-color: rgb(212, 61, 61) ;
+    background-color: rgb(136, 41, 41) ;
     grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 0.3fr;
     grid-template-rows: 0.6fr 1fr 1fr 1fr 0.1fr;
     gap: 0px 0px;
@@ -108,6 +122,7 @@ body{
       "marcoIzq galeriaObras galeriaObras galeriaObras galeriaObras galeriaObras galeriaObras marcoDer"
       "marcoIzq galeriaObras galeriaObras galeriaObras galeriaObras galeriaObras galeriaObras marcoDer"
       "marcoInf marcoInf marcoInf marcoInf marcoInf marcoInf marcoInf marcoInf";
+      height: 400px;
   }
   
   .marcoSup { 
@@ -258,7 +273,7 @@ body{
         display: grid;
         text-align:center;
         margin-top: 10px;
-        background-color: rgb(212, 61, 61) ;
+        background-color: rgb(136, 41, 41);
 
         gap: 0px 0px;
         grid-auto-flow: row;
@@ -321,7 +336,7 @@ body{
         display: grid;
         text-align:center;
         margin-top: 10px;
-        background-color: rgb(212, 61, 61) ;
+        background-color: rgb(136, 41, 41) ;
 
         gap: 0px 0px;
         grid-auto-flow: row;
